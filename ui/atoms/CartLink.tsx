@@ -6,7 +6,7 @@ export const CartLink = () => {
 		<Link
 			href="/cart"
 			title="Go to your cart"
-			className="hover:bg-tertiary flex items-center p-4 text-2xl font-bold transition-colors"
+			className="hover:bg-tertiary flex items-center rounded-2xl p-4 text-2xl font-bold transition-colors"
 		>
 			<ShoppingCart size="36" className="mx-1" />0
 		</Link>
