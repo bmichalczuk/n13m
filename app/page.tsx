@@ -1,7 +1,7 @@
 import { ProductType } from "../ui/molecules/ProductListItem";
-import { PageHeader } from "../ui/organisms/PageHeader";
+import { SiteHeader } from "../ui/organisms/PageHeader";
 import { ProductsList } from "../ui/organisms/ProductsList";
-
+import { SiteFooter } from "../ui/molecules/SiteFooter";
 const products: ProductType[] = [
 	{
 		id: "1",
@@ -56,11 +56,11 @@ const products: ProductType[] = [
 export default function Home() {
 	return (
 		<div className="flex min-h-lvh flex-col">
-			<PageHeader />
+			<SiteHeader />
 			<main className="flex-1 px-24 py-12">
 				<ProductsList products={products} />
 			</main>
-			<footer>footer</footer>
+			<SiteFooter />
 		</div>
 	);
 }
