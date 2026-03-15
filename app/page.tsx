@@ -56,11 +56,9 @@ const products: ProductType[] = [
 export default function Home() {
 	return (
 		<div className="flex min-h-lvh flex-col">
-			<SiteHeader />
 			<main className="flex-1 px-24 py-12">
 				<ProductsList products={products} />
 			</main>
-			<SiteFooter />
 		</div>
 	);
 }
